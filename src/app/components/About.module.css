@@ -1,0 +1,17 @@
+.paragraph{
+    display: flex;
+    font-size: 60px;
+    line-height: 1;
+    padding: 40px;
+    color: rgb(0, 0, 0);
+    flex-wrap: wrap;
+}
+.word{
+  position: relative;
+  margin-right: 12px;
+  margin-top: 12px;
+} 
+.shadow{
+  position: absolute;
+  opacity: 20%;
+}

@@ -1,0 +1,23 @@
+.main {
+  height: 100vh;
+  position: relative; /* Needed to anchor absolute children */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mask {
+  mask-image: url("https://raw.githubusercontent.com/olivierlarose/cursor-hover-mask/2484ba468b530ea9b958a5a671815da2fe413fa0/public/mask.svg");
+  mask-repeat: no-repeat;
+  mask-size: 40px;
+  background: #ec4e39;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+:root {
+  --background: #e9e8e8;
+  --foreground: #171717;
+}
+
+/* ::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  -ms-overflow-style: none;  
+  scrollbar-width: none; 
+} */
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-geologica), sans-serif;
+}
+body::before {
+  position: fixed;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  filter: url(#grainy);
+  opacity: 0.3;
+  background-position: 0 0;
+  background-repeat: repeat;
+  background-size: 150px;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.hero-text{
+   background: url("https://images.ctfassets.net/beeay9aupl8z/4XL2t3oIIERhMgKq6jCgbi/d04ff803def8681502f8c776be443d2b/HomeHeroBackground.png?q=65&fm=webp&w=1805");
+   background-size: cover;
+   background-clip: text;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   line-height: normal;
+  }
+  .outlined-text {
+    -webkit-text-stroke: 2px black;
+    color: transparent;
+  }
