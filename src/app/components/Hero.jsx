@@ -53,13 +53,13 @@ export default function CursorHover() {
 
       {/* Static Text */}
       <div className="flex flex-col md:hidden">
-       <p className="text-xl sm:text-sm md:text-lg tracking-widest uppercase text-gray-600">
+       <p className="text-xl sm:text-sm md:text-lg tracking-widest uppercase text-gray-600 text-center">
           Frontend Developer
         </p>
-        <h1 className="text-6xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold text-black">
-          Amit Roy
+        <h1 className="text-[7em] sm:text-6xl md:text-7xl lg:text-8xl font-extrabold text-black text-center leading-none ">
+          Amit <br />Roy
         </h1>
-        <a href="#footer" className="border-1 black w-fit px-8 py-2 rounded-full">Available Now</a>
+        <a href="#footer" className="border-1 black  px-8 py-2 rounded-full text-center">Available Now</a>
       </div>
       <h1 className="hidden md:block absolute text-[8em] sm:text-[5em] md:text-[8em] lg:text-[15em] font-bold text-center outlined-text pointer-events-none">
         Amit Roy

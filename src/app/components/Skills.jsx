@@ -25,7 +25,7 @@ const skills = [
     { name: "Tailwind CSS", icon: <RiTailwindCssFill className="text-4xl text-cyan-500" /> },
     { name: "MongoDB", icon: <SiMongodb className="text-4xl text-green-500" /> },
     { name: "Express", icon: <SiExpress className="text-4xl text-gray-800" /> },
-    { name: "React", icon: <FaReact className="text-4xl text-blue-500" /> },
+    { name: "React.js", icon: <FaReact className="text-4xl text-blue-500" /> },
     { name: "Node.js", icon: <FaNodeJs className="text-4xl text-green-600" /> },
     { name: "Next.js", icon: <TbBrandNextjs className="text-4xl text-black" /> },
     { name: "Zustand", image: "/zustand.svg" },
@@ -60,14 +60,9 @@ const itemVariants = {
 export default function Skills() {
     return (
         <section className="h-screen max-w-7xl bg-[#e9e8e8] mx-auto px-4">
-            <motion.h2 
-                initial={{ opacity: 0, y: -20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5 }}
-                className="text-4xl md:text-6xl bg-clip-text text-transparent bg-gradient-to-r from-black to-gray-600 mb-12 text-center"
-            >
-                MY<span className="font-bold"> SKILLS</span>
-            </motion.h2>
+            <h2 className="text-4xl md:text-6xl bg-clip-text text-transparent bg-gradient-to-r from-black to-gray-600 mb-12 text-center">
+                Skills
+            </h2>
             
             <motion.div 
                 variants={containerVariants}

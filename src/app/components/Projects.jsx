@@ -8,11 +8,12 @@ import { ArrowUpRight, ExternalLink, Github } from "lucide-react"
 // Enhanced featured works data with more details
 const featuredWorks = [
   {
-    id: 1,
-    title: "BiswakarmaBrothersBilliards",
-    subtitle: "Sports Equipment Store",
-    date: "JANUARY 2025",
-    categories: ["UX/UI", "WEB DEVELOPMENT", "NEXT.JS", "SUPABASE", "TAILWIND CSS"],
+    "id": 1,
+    "title": "BiswakarmaBrothersBilliards",
+    "subtitle": "Sports Equipment Store",
+    "work": "Freelance",
+    "date": "JANUARY 2025",
+    "categories": ["UX/UI", "WEB DEVELOPMENT", "NEXT.JS", "SUPABASE", "TAILWIND CSS"],
     "description": "Custom billiards equipment store with dynamic product listings, admin dashboard, and responsive design optimized for performance and SEO.",
     "imageUrl": "/biswakarmabrothersbilliards.mp4",
     "color": "#4A90E2",
@@ -24,6 +25,7 @@ const featuredWorks = [
     "id": 2,
     "title": "RoyFinds",
     "subtitle": "Mutual Fund Distribution Platform",
+    "work": "Freelance",
     "date": "FEBRUARY 2025",
     "categories": ["REACT.JS", "FIREBASE", "REST API", "FINTECH"],
     "description": "A mutual fund tracking platform for 10+ clients with real-time NAV, portfolio tracking, profit/loss tools, SIP calculator, and secure role-based auth.",
@@ -37,14 +39,15 @@ const featuredWorks = [
     "id": 3,
     "title": "Notboook",
     "subtitle": "Advanced Note-taking Web App",
+    "work": "Personal",
     "date": "JANUARY 2025",
     "categories": ["REACT.JS", "FIREBASE", "MARKDOWN", "REAL-TIME DB"],
     "description": "A responsive note-taking application with markdown support, note sharing via links or QR, offline download, and Firebase-powered auth and database.",
     "imageUrl": "/notboook.mp4",
     "color": "#F39C12",
     "links": {
-      live: "https://notboook.netlify.app/",
-      github: "https://github.com/amitroy-thedev/notboook",
+      "live": "https://notboook.netlify.app/",
+      "github": "https://github.com/amitroy-thedev/notboook",
     }
   },
 ]
@@ -175,9 +178,11 @@ const ProjectCard = ({ project, index, isActive, isHovered, onHover, onLeave }) 
         <div className="flex flex-col justify-between order-2 md:order-1">
           <div>
             <div className="flex items-center space-x-2 mb-2">
-              <span className="text-sm font-medium px-3 py-1 rounded-full bg-white/10 text-white">{project.date}</span>
-              <span className="text-neutral-500">•</span>
               <span className="text-sm text-neutral-400">{`0${index + 1}`}</span>
+              <span className="text-neutral-500">•</span>
+              <span className="text-sm font-medium px-3 py-1 rounded-full bg-white/10 text-white">{project.work}</span>
+              <span className="text-neutral-500">•</span>
+              <span className="text-sm text-neutral-400">{project.date}</span>
             </div>
 
             <h3 className="text-2xl md:text-3xl font-bold mb-2 text-white group-hover:text-white/90">

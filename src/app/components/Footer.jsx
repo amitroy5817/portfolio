@@ -7,7 +7,7 @@ export default function Footer() {
     const [isHovering, setIsHovering] = useState(false);
 
     return (
-        <footer className="mb-25 mx-auto relative">
+        <footer className="mb-25 mx-auto relative" id='footer'>
             <div 
                 className="flex justify-center items-center relative w-fit mx-auto flex-col">
                 <div onMouseEnter={() => setIsHovering(true)}
