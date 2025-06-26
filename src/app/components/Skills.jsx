@@ -60,7 +60,7 @@ const itemVariants = {
 export default function Skills() {
     return (
         <section className="h-screen max-w-7xl bg-[#e9e8e8] mx-auto px-4">
-            <h2 className="text-4xl md:text-6xl bg-clip-text text-transparent bg-gradient-to-r from-black to-gray-600 mb-12 text-center">
+            <h2 className="text-4xl md:text-6xl bg-clip-text text-transparent bg-gradient-to-r from-black to-gray-600 mb-12 text-center font-bold">
                 Skills
             </h2>
             
