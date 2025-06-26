@@ -50,6 +50,20 @@ const featuredWorks = [
       "github": "https://github.com/amitroy-thedev/notboook",
     }
   },
+  {
+    "id": 4,
+    "title": "Personal Portfolio Website",
+    "subtitle": "Developer Portfolio",
+    "work": "Personal",
+    "date": "JUNE 2025",
+    "categories": ["FRAMER MOTION", "NEXT.JS", "TAILWIND CSS", "EMAILJS", "PORTFOLIO"],
+    "description": "A modern, responsive portfolio website to showcase my projects, skills, and experience. Built with Next.js and Tailwind CSS, featuring smooth animations and a clean design.",
+    "imageUrl": "/portfolio.mp4",
+    "color": "#6366F1",
+    "links": {
+      "live": "https:amitroy.tech/",
+    }
+  },
 ]
 
 export default function Projects() {
@@ -138,15 +152,6 @@ export default function Projects() {
           </div>
         </motion.div>
       </section>
-
-      {/* Project counter */}
-      {/* <div className="fixed bottom-8 right-8 z-20">
-        <div className="bg-white/10 backdrop-blur-md rounded-full px-4 py-2 flex items-center space-x-2">
-          <span className="text-white font-medium">{String(activeProject + 1).padStart(2, "0")}</span>
-          <span className="text-gray-500">/</span>
-          <span className="text-gray-500">{String(featuredWorks.length).padStart(2, "0")}</span>
-        </div>
-      </div> */}
     </motion.div>
   )
 }
@@ -207,7 +212,7 @@ const ProjectCard = ({ project, index, isActive, isHovered, onHover, onLeave }) 
 
           <div className="flex items-center space-x-4">
             <a
-              href={project.links.live}
+              href={project?.links?.live}
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center space-x-2 text-white hover:text-white/80 transition-colors group"
@@ -216,7 +221,7 @@ const ProjectCard = ({ project, index, isActive, isHovered, onHover, onLeave }) 
               <ExternalLink className="w-4 h-4 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
             </a>
 
-            {project.links.github && (
+            {project?.links?.github && (
               <a
                 href={project.links.github}
                 target="_blank"

@@ -2,16 +2,16 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { 
-    FaHtml5, 
-    FaReact, 
-    FaNodeJs, 
+import {
+    FaHtml5,
+    FaReact,
+    FaNodeJs,
     FaGithub,
     FaFigma
 } from "react-icons/fa";
 
-import { 
-    SiExpress, 
+import {
+    SiExpress,
     SiFramer,
     SiMongodb,
 } from "react-icons/si";
@@ -60,11 +60,11 @@ const itemVariants = {
 export default function Skills() {
     return (
         <section className="h-screen max-w-7xl bg-[#e9e8e8] mx-auto px-4">
-            <h2 className="text-4xl md:text-6xl bg-clip-text text-transparent bg-gradient-to-r from-black to-gray-600 mb-12 text-center">
+            <h2 className="text-4xl md:text-6xl bg-clip-text text-transparent bg-gradient-to-r from-black to-gray-600 mb-12 text-center font-bold">
                 Skills
             </h2>
-            
-            <motion.div 
+
+            <motion.div
                 variants={containerVariants}
                 initial="hidden"
                 whileInView="visible"
@@ -75,7 +75,7 @@ export default function Skills() {
                     <motion.div
                         key={skill.name}
                         variants={itemVariants}
-                        whileHover={{ 
+                        whileHover={{
                             scale: 1.05,
                             boxShadow: "0 10px 20px rgba(0,0,0,0.1)"
                         }}

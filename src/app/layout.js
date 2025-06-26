@@ -12,7 +12,12 @@ const geologica = Geologica({
 export const metadata = {
   title: "Amit Roy // Portfolio",
   description: "Personal portfolio website of Amit Roy, a developer based in West Bengal, India",
-  keywords: ["portfolio", "developer", "web development", "Amit Roy"],
+  keywords: ["portfolio", "developer", "web development", "Amit Roy", "Frontend Developer"],
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.png",
+    apple: "/favicon.png",
+  },
 };
 
 export default function RootLayout({ children }) {
