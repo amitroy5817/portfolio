@@ -2,6 +2,7 @@ import { Geologica } from "next/font/google";
 import "./globals.css";
 import Preloader from "./components/Preloader";
 import Footer from "./components/Footer";
+import GoogleAnalytics from "./components/GoogleAnalytics";
 const geologica = Geologica({
   subsets: ["latin"],
   display: "swap",
@@ -34,6 +35,7 @@ export default function RootLayout({ children }) {
           </filter>
         </svg>
         {children}
+        <GoogleAnalytics measurementId="G-V0X2QCX042"/>
         <Footer/>
       </body>
     </html>
