@@ -2,7 +2,7 @@
 
 import { useEffect } from 'react';
 import { usePathname } from 'next/navigation';
-import { initGA, logPageView } from '@/lib/ga';
+import { initGA, logPageView } from '../lib/ga';
 import ReactGA from 'react-ga4';
 
 const GoogleAnalytics = ({ measurementId }) => {
