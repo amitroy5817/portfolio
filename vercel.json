@@ -1,7 +1,10 @@
 {
   "redirects": [
     {
-      "source": "/meet",
+      "source": "/(.*)",
+      "has": [
+        { "type": "host", "value": "meet.amitroy.tech" }
+      ],
       "destination": "https://meet.google.com/nte-qwqe-wve",
       "permanent": true
     }
