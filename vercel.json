@@ -1,8 +1,8 @@
 {
   "redirects": [
     {
-      "source": "https://meet.amitroy.tech",
-      "destination": "http://meet.google.com/nte-qwqe-wve",
+      "source": "/meet",
+      "destination": "https://meet.google.com/nte-qwqe-wve",
       "permanent": true
     }
   ]
