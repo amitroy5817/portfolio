@@ -4,7 +4,8 @@ import Preloader from "./components/Preloader";
 import Footer from "./components/Footer";
 import GoogleAnalytics from "./components/GoogleAnalytics";
 import StructuredData from "./components/StructuredData";
-import CustomCursor from "./components/CustomCursor"; 
+import CustomCursor from "./components/CustomCursor";
+import { Analytics } from "@vercel/analytics/react"; 
 
 const geologica = Geologica({
   subsets: ["latin"],
@@ -100,6 +101,7 @@ export default function RootLayout({ children }) {
         </svg>
         {children}
         <GoogleAnalytics measurementId="G-V0X2QCX042"/>
+        <Analytics />
         <Footer/>
       </body>
     </html>
