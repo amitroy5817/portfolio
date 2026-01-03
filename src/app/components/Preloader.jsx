@@ -19,7 +19,7 @@ export default function Preloader() {
             }`}
         >
             <div className="text-4xl font-bold text-white mb-8">
-                Portfolio 2025<sup>©</sup>
+                Portfolio 2026<sup>©</sup>
             </div>
         </div>
     );

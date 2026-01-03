@@ -59,18 +59,18 @@ export default function CursorHover() {
         <h1 className="text-[7em] sm:text-6xl md:text-7xl lg:text-8xl font-extrabold text-black text-center leading-none ">
           Amit <br />Roy
         </h1>
-        <a href="#footer" className="border-1 black  px-8 py-2 rounded-full text-center">Available Now</a>
+        <a href="https://drive.usercontent.google.com/download?id=1ZDD3MViX-_jSpkMOyD-m4f3YptNQDPCJ&export=download" target="_blank" className="mt-6 border-1 black px-8 py-2 rounded-full text-center">View CV</a>
+        <a href="#footer" className="mt-6 border-1 black px-8 py-2 rounded-full text-center bg-[#ec4e39] text-white">Let's Work Together</a>
       </div>
       <h1 className="hidden md:block absolute text-[8em] sm:text-[5em] md:text-[8em] lg:text-[15em] font-bold text-center outlined-text pointer-events-none">
         Amit Roy
       </h1>
 
-      <div className="absolute bottom-50 w-full flex items-center justify-center space-x-2">
+      <div className="absolute bottom-50 w-full items-center justify-center space-x-2 hidden md:flex">
         <span className="h-px w-10 bg-black/50"></span>
         <p className="text-lg text-black/80">Based in West Bengal, India</p>
         <span className="h-px w-10 bg-black/50"></span>
       </div>
     </main>
-
   );
 } 

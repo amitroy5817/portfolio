@@ -47,3 +47,8 @@ body::before {
     -webkit-text-stroke: 2px black;
     color: transparent;
   }
+
+  ::selection{
+    background: #ec4e39;
+    color: white;
+  }

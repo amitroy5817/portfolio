@@ -126,7 +126,7 @@ export default function Footer() {
       </div>
 
       <span className="text-center text-black/5 text-[6em] md:text-[15em] font-bold absolute -bottom-25 left-15 pointer-events-none leading-none">
-        v1.0.1
+        v1.0.2
       </span>
     </footer>
   );

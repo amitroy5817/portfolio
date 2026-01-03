@@ -8,63 +8,83 @@ import { ArrowUpRight, ExternalLink, Github } from "lucide-react"
 // Enhanced featured works data with more details
 const featuredWorks = [
   {
-    "id": 1,
-    "title": "BiswakarmaBrothersBilliards",
-    "subtitle": "Sports Equipment Store",
-    "work": "Freelance",
-    "date": "JANUARY 2025",
-    "categories": ["UX/UI", "WEB DEVELOPMENT", "NEXT.JS", "SUPABASE", "TAILWIND CSS"],
-    "description": "Custom billiards equipment store with dynamic product listings, admin dashboard, and responsive design optimized for performance and SEO.",
-    "imageUrl": "/biswakarmabrothersbilliards.mp4",
-    "color": "#4A90E2",
-    "links": {
-      "live": "https://biswakarmabrothersbilliards.com"
-    }
+    id: 1,
+    title: "Vinayak Food Company",
+    subtitle: "Food Manufacturing & Wholesale Website",
+    work: "Freelance",
+    date: "NOVEMBER 2025",
+    categories: ["NEXT.JS", "TAILWIND CSS", "CLOUDFLARE", "CLOUDINARY", "ADMIN DASHBOARD"],
+    description:
+      "A professional business website for a food manufacturing and wholesale company, focused on brand presence, product showcase, fast load times, and mobile-first responsive design.",
+    imageUrl: "/vinayakfoodcompany.mp4",
+    color: "#FFEBAD",
+    links: {
+      live: "https://vinayakfoodcompany.com",
+    },
   },
   {
-    "id": 2,
-    "title": "RoyFinds",
-    "subtitle": "Mutual Fund Distribution Platform",
-    "work": "Freelance",
-    "date": "FEBRUARY 2025",
-    "categories": ["REACT.JS", "FIREBASE", "REST API", "FINTECH"],
-    "description": "A mutual fund tracking platform for 10+ clients with real-time NAV, portfolio tracking, profit/loss tools, SIP calculator, and secure role-based auth.",
-    "imageUrl": "/royfinds.mp4",
-    "color": "#27AE60",
-    "links": {
-      "live": "https://royfinds.in"
-    }
-  },  
-  {
-    "id": 3,
-    "title": "Notboook",
-    "subtitle": "Advanced Note-taking Web App",
-    "work": "Personal",
-    "date": "JANUARY 2025",
-    "categories": ["REACT.JS", "FIREBASE", "MARKDOWN", "REAL-TIME DB"],
-    "description": "A responsive note-taking application with markdown support, note sharing via links or QR, offline download, and Firebase-powered auth and database.",
-    "imageUrl": "/notboook.mp4",
-    "color": "#F39C12",
-    "links": {
-      "live": "https://notboook.netlify.app/",
-      "github": "https://github.com/amitroy-thedev/notboook",
-    }
+    id: 2,
+    title: "BiswakarmaBrothersBilliards",
+    subtitle: "Sports Equipment Store",
+    work: "Freelance",
+    date: "JANUARY 2025",
+    categories: ["UX/UI", "WEB DEVELOPMENT", "NEXT.JS", "SUPABASE", "TAILWIND CSS"],
+    description:
+      "Custom billiards equipment store with dynamic product listings, admin dashboard, and responsive design optimized for performance and SEO.",
+    imageUrl: "/biswakarmabrothersbilliards.mp4",
+    color: "#4A90E2",
+    links: {
+      live: "https://biswakarmabrothersbilliards.com",
+    },
   },
   {
-    "id": 4,
-    "title": "Personal Portfolio Website",
-    "subtitle": "Developer Portfolio",
-    "work": "Personal",
-    "date": "JUNE 2025",
-    "categories": ["FRAMER MOTION", "NEXT.JS", "TAILWIND CSS", "EMAILJS", "PORTFOLIO"],
-    "description": "A modern, responsive portfolio website to showcase my projects, skills, and experience. Built with Next.js and Tailwind CSS, featuring smooth animations and a clean design.",
-    "imageUrl": "/portfolio.mp4",
-    "color": "#6366F1",
-    "links": {
-      "live": "https:amitroy.tech/",
-    }
+    id: 3,
+    title: "RoyFinds",
+    subtitle: "Mutual Fund Distribution Platform",
+    work: "Freelance",
+    date: "FEBRUARY 2025",
+    categories: ["REACT.JS", "FIREBASE", "REST API", "FINTECH"],
+    description:
+      "A mutual fund tracking platform for 10+ clients with real-time NAV, portfolio tracking, profit/loss tools, SIP calculator, and secure role-based auth.",
+    imageUrl: "/royfinds.mp4",
+    color: "#27AE60",
+    links: {
+      live: "https://royfinds.in",
+    },
   },
-]
+  {
+    id: 4,
+    title: "Notboook",
+    subtitle: "Advanced Note-taking Web App",
+    work: "Personal",
+    date: "NOVEMBER 2025",
+    categories: ["NEXTJS", "CLOUDFLARE", "TAILWIND CSS", "DATABASE", "AUTH"],
+    description:
+      "A responsive note-taking application with markdown support, note sharing via links or QR, offline download, and Firebase-powered auth and database.",
+    imageUrl: "/notboook.mp4",
+    color: "#F39C12",
+    links: {
+      live: "https://notboook.netlify.app/",
+      github: "https://github.com/amitroy-thedev/notboook",
+    },
+  },
+  {
+    id: 5,
+    title: "Personal Portfolio Website",
+    subtitle: "Developer Portfolio",
+    work: "Personal",
+    date: "JUNE 2025",
+    categories: ["FRAMER MOTION", "NEXT.JS", "TAILWIND CSS", "EMAILJS", "PORTFOLIO"],
+    description:
+      "A modern, responsive portfolio website to showcase my projects, skills, and experience. Built with Next.js and Tailwind CSS, featuring smooth animations and a clean design.",
+    imageUrl: "/portfolio.mp4",
+    color: "#6366F1",
+    links: {
+      live: "https://amitroy.tech/",
+    },
+  },
+];
+
 
 export default function Projects() {
   const targetRef = useRef(null)
