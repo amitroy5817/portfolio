@@ -24,7 +24,7 @@ export default function CursorHover() {
   }, []);
 
   return (
-    <main className={styles.main} ref={target}>
+    <main ref={target} data-hero-section className={`${styles.main} bg-[url('/bg-shadow.jpg')] dark:bg-[url('/bg-shadow-dark.jpg')] bg-cover bg-center bg-fixed`}>
       {!isTouchDevice && (
         <motion.div
           className={styles.mask}
@@ -37,39 +37,41 @@ export default function CursorHover() {
           <h1
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
-            className="text-[2em] sm:text-[4em] md:text-[6em] lg:text-[10em] font-bold text-center "
-          >
-          </h1>
-          <h1
-            onMouseEnter={() => setIsHovered(true)}
-            onMouseLeave={() => setIsHovered(false)}
             className="text-[3em] sm:text-[5em] md:text-[8em] lg:text-[15em] font-bold text-center"
           >
-            <span className="absolute top-0 left-0 outlined-text pointer-events-none">FrontEnd Developer</span>
-            Amit Roy
+            <span className="absolute top-0 left-0 outlined-text pointer-events-none">FullStack Developer</span>
+            <span className="text-black dark:text-white">Amit Roy</span>
           </h1>
         </motion.div>
       )}
 
       {/* Static Text */}
       <div className="flex flex-col md:hidden">
-       <p className="text-xl sm:text-sm md:text-lg tracking-widest uppercase text-gray-600 text-center">
-          Frontend Developer
+        <p className="text-xl sm:text-sm md:text-lg tracking-widest uppercase text-gray-600 dark:text-gray-400 text-center">
+          FullStack Developer
         </p>
-        <h1 className="text-[7em] sm:text-6xl md:text-7xl lg:text-8xl font-extrabold text-black text-center leading-none ">
+        <h1 className="text-[7em] sm:text-6xl md:text-7xl lg:text-8xl font-extrabold text-black dark:text-white text-center leading-none ">
           Amit <br />Roy
         </h1>
-        <a href="https://drive.usercontent.google.com/download?id=1ZDD3MViX-_jSpkMOyD-m4f3YptNQDPCJ&export=download" target="_blank" className="mt-6 border-1 black px-8 py-2 rounded-full text-center">View CV</a>
+        <a href="#projects" className="mt-6 border-1 black dark:border-white px-8 py-2 rounded-full text-center text-black dark:text-white">View My Works</a>
         <a href="#footer" className="mt-6 border-1 black px-8 py-2 rounded-full text-center bg-[#ec4e39] text-white">Let's Work Together</a>
       </div>
-      <h1 className="hidden md:block absolute text-[8em] sm:text-[5em] md:text-[8em] lg:text-[15em] font-bold text-center outlined-text pointer-events-none">
+      <h1 className="
+        hidden md:block absolute
+        text-[5em] sm:text-[5em] md:text-[8em] lg:text-[15em]
+        font-bold text-center pointer-events-none
+        text-transparent
+        [-webkit-text-stroke:2px_black]
+        dark:[-webkit-text-stroke:2px_white]
+      ">
         Amit Roy
       </h1>
 
+
       <div className="absolute bottom-50 w-full items-center justify-center space-x-2 hidden md:flex">
-        <span className="h-px w-10 bg-black/50"></span>
-        <p className="text-lg text-black/80">Based in West Bengal, India</p>
-        <span className="h-px w-10 bg-black/50"></span>
+        <span className="h-px w-10 bg-black/50 dark:bg-white/50"></span>
+        <p className="text-lg text-black/80 dark:text-white/80">Based in West Bengal, India</p>
+        <span className="h-px w-10 bg-black/50 dark:bg-white/50"></span>
       </div>
     </main>
   );

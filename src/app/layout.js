@@ -4,6 +4,8 @@ import Preloader from "./components/Preloader";
 import Footer from "./components/Footer";
 import GoogleAnalytics from "./components/GoogleAnalytics";
 import StructuredData from "./components/StructuredData";
+import CustomCursor from "./components/CustomCursor"; 
+
 const geologica = Geologica({
   subsets: ["latin"],
   display: "swap",
@@ -14,13 +16,13 @@ const geologica = Geologica({
 export const metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://amitroy.tech'),
   title: {
-    default: "Amit Roy - Frontend Developer Portfolio",
+    default: "Amit Roy // FullStack Developer Portfolio",
     template: "%s | Amit Roy"
   },
-  description: "Frontend Developer based in West Bengal, India. Specializing in React, Next.js, and modern web development. Creating clean, performant, and user-friendly web experiences.",
+  description: "FullStack Developer based in West Bengal, India. Specializing in React, Next.js, Node.js and modern web development. Creating clean, performant, and user-friendly web experiences.",
   keywords: [
     "Amit Roy",
-    "Frontend Developer",
+    "FullStack Developer",
     "Web Developer",
     "React Developer",
     "Next.js Developer",
@@ -30,7 +32,7 @@ export const metadata = {
     "West Bengal",
     "India",
     "Web Development",
-    "Frontend Development"
+    "FullStack Development"
   ],
   authors: [{ name: "Amit Roy" }],
   creator: "Amit Roy",
@@ -51,21 +53,21 @@ export const metadata = {
     locale: "en_US",
     url: process.env.NEXT_PUBLIC_SITE_URL || 'https://amitroy.tech',
     siteName: "Amit Roy Portfolio",
-    title: "Amit Roy - Frontend Developer Portfolio",
-    description: "Frontend Developer based in West Bengal, India. Specializing in React, Next.js, and modern web development.",
+    title: "Amit Roy - FullStack Developer Portfolio",
+    description: "FullStack Developer based in West Bengal, India. Specializing in React, Next.js, and modern web development.",
     images: [
       {
         url: "/logo.png",
         width: 1200,
         height: 630,
-        alt: "Amit Roy - Frontend Developer",
+        alt: "Amit Roy - FullStack Developer",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Amit Roy - Frontend Developer Portfolio",
-    description: "Frontend Developer based in West Bengal, India. Specializing in React, Next.js, and modern web development.",
+    title: "Amit Roy - FullStack Developer Portfolio",
+    description: "FullStack Developer based in West Bengal, India. Specializing in React, Next.js, and modern web development.",
     images: ["/logo.png"],
     creator: "@amitroy", // Update with actual Twitter handle if available
   },
@@ -85,10 +87,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className="scroll-smooth">
       <body
-        className={`${geologica.variable} font-sans antialiased min-h-screen`}
+        className={`${geologica.variable} font-sans antialiased min-h-screen dark:bg-[#252525]! dark:text-white`}
       >
         <StructuredData />
         <Preloader />
+        <CustomCursor />
         <svg className="pointer-events-none absolute cursor-none">
           <filter id="grainy">
             <feTurbulence type="turbulence" baseFrequency="0.5"></feTurbulence>

@@ -3,21 +3,71 @@
 :root {
   --background: #e9e8e8;
   --foreground: #171717;
+  
+  /* Experience card variables */
+  --card-height: 40vw;
+  --card-margin: 4vw;
+  --card-top-offset: 2em;
+  --numcards: 3;
+  --outline-width: 0px;
 }
 
-/* ::-webkit-scrollbar {
+/* Mobile responsive card variables */
+@media (max-width: 768px) {
+  :root {
+    --card-height: 80vh;
+    --card-margin: 0.5rem;
+    --card-top-offset: 3.8em;
+    --card-sticky-top: 10rem;
+  }
+}
+
+@media (min-width: 768px) {
+  :root {
+    --card-sticky-top: 7rem;
+  }
+}
+
+/* Card layout for mobile and desktop */
+@media (max-width: 767px) {
+  .card-layout-responsive {
+    grid-template-areas: "img" "text" !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .card-layout-responsive {
+    grid-template-areas: "text img" !important;
+  }
+}
+
+::-webkit-scrollbar {
   display: none;
 }
 
 * {
   -ms-overflow-style: none;  
   scrollbar-width: none; 
-} */
+}
+
+@custom-variant dark (&:is(.dark *));
 
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-geologica), sans-serif;
+  cursor: none;
+}
+
+/* Show default cursor in hero section */
+[data-hero-section] {
+  cursor: auto;
+}
+
+@media (pointer: coarse) {
+  body {
+    cursor: auto;
+  }
 }
 body::before {
   position: fixed;
@@ -52,3 +102,57 @@ body::before {
     background: #ec4e39;
     color: white;
   }
+
+/* Experience card scroll animation */
+@supports (animation-timeline: works) {
+  @scroll-timeline cards-element-scrolls-in-body {
+    source: selector(body);
+    scroll-offsets:
+      selector(#cards) start 1,
+      selector(#cards) start 0
+    ;
+    start: selector(#cards) start 1;
+    end: selector(#cards) start 0;
+    time-range: 4s;
+  }
+
+  .card {
+    --index0: calc(var(--index) - 1);
+    --reverse-index: calc(var(--numcards) - var(--index0));
+    --reverse-index0: calc(var(--reverse-index) - 1);
+  }
+  
+  .card-content {
+    transform-origin: 50% 0%;
+    will-change: transform;
+
+    --duration: calc(var(--reverse-index0) * 1s);
+    --delay: calc(var(--index0) * 1s);
+
+    animation: var(--duration) linear scale var(--delay) forwards;
+    animation-timeline: cards-element-scrolls-in-body;
+  }
+
+  @keyframes scale {
+    to {
+      transform:
+        scale(calc(
+          1.1
+          -
+          calc(0.1 * var(--reverse-index))
+        ));
+    }
+  }
+
+  /* Move heading with stacked cards */
+  .experience-heading {
+    animation: move-heading 4s linear forwards;
+    animation-timeline: cards-element-scrolls-in-body;
+  }
+
+  @keyframes move-heading {
+    to {
+      transform: translateY(calc((var(--numcards) - 1) * var(--card-top-offset)));
+    }
+  }
+}

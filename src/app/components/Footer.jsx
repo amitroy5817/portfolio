@@ -26,7 +26,7 @@ export default function Footer() {
       );          
 
       setMessage(
-        "✅ Thank you for your interest! I'll reach out to your email ASAP."
+        "Thank you for your interest! I'll reach out to your email ASAP :)"
       );
       setInterestValue("");
     } catch (error) {
@@ -44,8 +44,8 @@ export default function Footer() {
           <a
             onMouseEnter={() => setIsHovering(true)}
             onMouseLeave={() => setIsHovering(false)}
-            className="text-5xl font-bold cursor-pointer py-5 px-10 text-center"
-            href="https://drive.usercontent.google.com/download?id=1ZDD3MViX-_jSpkMOyD-m4f3YptNQDPCJ&export=download"
+            className="text-5xl font-bold cursor-pointer py-5 px-10 text-center text-black dark:text-white"
+            href="https://drive.google.com/file/d/1NNrVXNYnFDxTiC22ZL8VzBFajaV4vdSz/view?usp=sharing"
           >
             LET<span className="text-red-500">'</span>S WORK TOGETHER
           </a>
@@ -80,8 +80,11 @@ export default function Footer() {
             </div>
           )}
 
-          <span className="text-center">
-            Open for <b>freelance Projects</b> & <b>Internships</b>
+          <span className="text-center text-black dark:text-white">
+            Open for <b>freelance Projects</b> // <b>Internships</b>
+          </span>
+          <span className="text-center max-w-md mx-auto text-black dark:text-white">
+            Have a project in mind or just want to say hi? My inbox is always open.
           </span>
 
           {/* Contact Input Box */}
@@ -95,8 +98,8 @@ export default function Footer() {
           >
             <input
               type="email"
-              placeholder="I'm interested! Leave your email at my inbox"
-              className="flex-1 border-2 border-gray-300 rounded-full px-4 py-2 w-64 focus:outline-none focus:ring-2 focus:ring-red-400"
+              placeholder="Leave your email at my inbox :)"
+              className="flex-1 border-2 border-gray-300 dark:border-gray-600 dark:bg-gray-800 dark:text-white rounded-full px-4 py-2 w-74 focus:outline-none focus:ring-2 focus:ring-red-400 dark:focus:ring-red-500"
               value={interestValue}
               onChange={(e) => setInterestValue(e.target.value)}
               required
@@ -112,21 +115,21 @@ export default function Footer() {
           </form>
 
           {message && (
-            <span className="text-sm text-center mt-2 w-full">{message}</span>
+            <span className="text-sm text-center mt-2 w-full text-black dark:text-white">{message}</span>
           )}
         </div>
 
-        <p className="text-gray-500">or reach out directly to my email</p>
+        <p className="text-gray-500 dark:text-gray-400">or reach out directly to my email</p>
         <a
           href="mailto:hello@amitroy.tech"
-          className="text-center text-gray-700"
+          className="text-center text-gray-700 dark:text-gray-300"
         >
           hello@amitroy.tech
         </a>
       </div>
 
-      <span className="text-center text-black/5 text-[6em] md:text-[15em] font-bold absolute -bottom-25 left-15 pointer-events-none leading-none">
-        v1.0.2
+      <span className="text-center text-black/5 dark:text-white/5 text-[6em] md:text-[15em] font-bold absolute -bottom-25 left-15 pointer-events-none leading-none">
+        v2.0.0
       </span>
     </footer>
   );
