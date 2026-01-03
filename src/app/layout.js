@@ -5,7 +5,7 @@ import Footer from "./components/Footer";
 import GoogleAnalytics from "./components/GoogleAnalytics";
 import StructuredData from "./components/StructuredData";
 import CustomCursor from "./components/CustomCursor";
-import { Analytics } from "@vercel/analytics/react"; 
+import { Analytics } from "@vercel/analytics/next"; 
 
 const geologica = Geologica({
   subsets: ["latin"],
