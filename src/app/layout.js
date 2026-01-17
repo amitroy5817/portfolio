@@ -100,6 +100,12 @@ export default function RootLayout({ children }) {
           </filter>
         </svg>
         {children}
+         {/* Deployless widget */}
+        <script
+          src="https://api.deployless.me/widget.js"
+          data-site-id="pub_89f4cf5a798"
+          async
+        ></script>
         <GoogleAnalytics measurementId="G-V0X2QCX042"/>
         <Analytics />
         <Footer/>
