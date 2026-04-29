@@ -121,10 +121,10 @@ export default function Footer() {
 
         <p className="text-gray-500 dark:text-gray-400">or reach out directly to my email</p>
         <a
-          href="mailto:hello@amitroy.tech"
+          href="mailto:hello@royamit.tech"
           className="text-center text-gray-700 dark:text-gray-300"
         >
-          hello@amitroy.tech
+          hello@royamit.tech
         </a>
       </div>
 
