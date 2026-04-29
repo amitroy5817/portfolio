@@ -45,7 +45,7 @@ export default function Footer() {
             onMouseEnter={() => setIsHovering(true)}
             onMouseLeave={() => setIsHovering(false)}
             className="text-5xl font-bold cursor-pointer py-5 px-10 text-center text-black dark:text-white"
-            href="https://drive.google.com/file/d/1k9byZ-X3tAiEoCpPMkuYounDQgw98BEr/view?usp=sharing"
+            href="https://drive.google.com/file/d/1S4IF47-qMbkI5TeAATe7poIifBpzOv99/view?usp=sharing"
           >
             LET<span className="text-red-500">'</span>S WORK TOGETHER
           </a>
@@ -129,7 +129,7 @@ export default function Footer() {
       </div>
 
       <span className="text-center text-black/5 dark:text-white/5 text-[6em] md:text-[15em] font-bold absolute -bottom-25 left-15 pointer-events-none leading-none">
-        v2.0.0
+        v2.0.1
       </span>
     </footer>
   );
