@@ -41,7 +41,7 @@ export default function SocialLinks() {
     {
       icon: <FileDown className="size-6" />,
       href:
-        "https://drive.google.com/file/d/1k9byZ-X3tAiEoCpPMkuYounDQgw98BEr/view?usp=sharing",
+        "https://drive.google.com/file/d/1S4IF47-qMbkI5TeAATe7poIifBpzOv99/view?usp=sharing",
       text: "CV",
     },
   ];
