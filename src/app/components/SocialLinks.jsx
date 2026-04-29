@@ -35,13 +35,13 @@ export default function SocialLinks() {
     },
     {
       icon: <Mail className="size-6" />,
-      href: "mailto:hello@amitroy.tech",
+      href: "mailto:hello@royamit.tech",
       text: "Mail",
     },
     {
       icon: <FileDown className="size-6" />,
       href:
-        "https://drive.google.com/file/d/1NNrVXNYnFDxTiC22ZL8VzBFajaV4vdSz/view?usp=sharing",
+        "https://drive.google.com/file/d/1k9byZ-X3tAiEoCpPMkuYounDQgw98BEr/view?usp=sharing",
       text: "CV",
     },
   ];
